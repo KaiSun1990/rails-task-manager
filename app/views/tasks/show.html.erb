@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Task: <%= @task.title %></h1>
+  <div class="flex-container">
+
+      <div class="task-container">
+        <h2><%= @task.details %></h2>
+        <p>Completed? : <%= @task.completed %></p>
+        <p><%= link_to "Back to TaskList", tasks_path %></p>
+        <p><%= link_to "Edit this task", edit_path %></p>
+      </div>
+  </div>
+</div>
